@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Rekod Prestasi Murid - SK Tawang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --secondary-yellow: #ffd700;
+            --accent-red: #e63946;
+            --dark-blue: #003366;
+            --light-bg: #f4f7f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 8px solid var(--primary-blue);
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        header h2 {
+            font-size: 18px;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .exam-tag {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Buton Isi Markah */
+        .btn-isi {
+            background-color: var(--primary-blue);
+            color: white;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-isi:hover {
+            background-color: transparent;
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        /* Buton Papar Markah */
+        .btn-papar {
+            background-color: var(--secondary-yellow);
+            color: var(--dark-blue);
+            border: 2px solid var(--secondary-yellow);
+        }
+
+        .btn-papar:hover {
+            background-color: transparent;
+            color: var(--dark-blue);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Responsif untuk skrin kecil */
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px;
+            }
+            header h1 { font-size: 20px; }
+            header h2 { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="Logo Sekolah.png" alt="Logo SK Tawang">
+        </div>
+
+        <header>
+            <h1>Sistem Rekod Prestasi Murid</h1>
+            <h2>Sekolah Kebangsaan Tawang</h2>
+            <div class="exam-tag">&lt;LATIHAN KECEMERLANGAN 1 TAHUN 2026&gt;</div>
+        </header>
+
+        <div class="button-group">
+            <a href="https://script.google.com/macros/s/AKfycbyJfQgB5xJUVraoQeBzUtG37UJQOHHzbnqsmPAjkm0/dev" class="btn btn-isi">
+                📝 ISI MARKAH
+            </a>
+            
+            <a href="https://docs.google.com/spreadsheets/d/1s97b8qegqKwbN04vLCO60h3d2mwfb2V2GNWLHR9vKlI/edit?usp=sharing" class="btn btn-papar">
+                📊 PAPAR MARKAH
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Super Tawang Hub
+        </footer>
+    </div>
+
+</body>
+</html>
